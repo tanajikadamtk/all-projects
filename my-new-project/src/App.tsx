@@ -1,11 +1,12 @@
-
+import '../node_modules/bootstrap/scss/bootstrap.scss';
 import './App.css'
+import Home from './pages/Home'
 
 function App() {
 
   return (
       <div>
-       <h1>Hello</h1>
+        <Home />
       </div>
   )
 }
