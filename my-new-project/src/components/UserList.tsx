@@ -64,7 +64,7 @@ const UserList = () => {
     //     ))}
     // </div>
 
-        <div>
+        <div className="container">
       {isLoading && <p>Loading items...</p>}
       {errorMessage && <p className="text-danger">Error: {errorMessage}</p>}
       {!isLoading && !errorMessage && (

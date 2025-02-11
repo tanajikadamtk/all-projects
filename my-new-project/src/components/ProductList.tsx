@@ -43,7 +43,7 @@ const ProductList = () => {
     //     ))}
     // </div>
 
-    <div>
+    <div className="container">
       <h2>Product List</h2>
       {loading && <p>Loading...</p>}
       {error && <p className="text-danger">Error: {error}</p>}

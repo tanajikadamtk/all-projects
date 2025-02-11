@@ -1,15 +1,9 @@
-import ProductList from "../components/ProductList";
-import UserList from "../components/UserList";
 
 
 const Home = () => {
   return (
-    <div className="text-left">
-      <h1>Welcome to the Store</h1>
-      <ProductList />
-
-      <h1>User List</h1>
-      <UserList />
+    <div className="w-100">
+      <h1>Welcome to the React js Projects</h1>
     </div>
   );
 };
