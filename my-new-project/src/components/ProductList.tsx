@@ -7,6 +7,7 @@ interface Product {
     availabilityStatus?: string;
     stock?: number;
     reviews?: { reviewerName: string; comment: string; rating: number }[];
+    images: string[] ;
   }
 
 const ProductList = () => {
@@ -53,6 +54,7 @@ const ProductList = () => {
             <tr>
               <th>ID</th>
               <th>Title</th>
+              <th>Images</th>
               <th>Price ($)</th>
               <th>Availability</th>
               <th>Stock</th>
@@ -63,6 +65,7 @@ const ProductList = () => {
               <tr key={item.id}>
                 <td>{item.id}</td>
                 <td>{item.title}</td>
+                <td><img style={{width:"170px", height:"170px"}} src={item.images[0]} alt="images" /></td>
                 <td>{item.price.toFixed(2)}</td>
                 <td
                   style={{

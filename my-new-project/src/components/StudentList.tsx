@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState, useCallback, useRef } from "react";
 import {
   addStudent,
@@ -234,10 +235,12 @@ const StudentList: React.FC = () => {
               <td>{student.maidenName}</td>
               <td>{student.age}</td>
               <td>
-                <button onClick={() => setEditingStudent(student)}>Edit</button>
-                <button onClick={() => handleDeleteStudent(student.id)}>
+                <div className="d-flex gap-3">
+                <button className="btn btn-success" onClick={() => setEditingStudent(student)}>Edit</button>
+                <button className="btn btn-danger" onClick={() => handleDeleteStudent(student.id)}>
                   Delete
                 </button>
+                </div>
               </td>
             </tr>
           ))}
